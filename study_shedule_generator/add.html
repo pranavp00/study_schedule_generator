@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Subject Information Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      select {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background-color: #f2f2f2;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Subject Details</h1>
+    <form>
+      <label for="subject">Subject Name:</label>
+      <input type="text" id="subject" name="subject" placeholder="Enter subject name..." required>
+
+      <label for="priority">Priority:</label>
+      <select id="priority" name="priority" required>
+        <option value="" disabled selected>Select priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+
+      <label for="goal">Goal:</label>
+      <input type="text" id="goal" name="goal" placeholder="Enter goal..." required>
+
+      <label for="difficulty">Difficulty Level:</label>
+      <select id="difficulty" name="difficulty" required>
+        <option value="" disabled selected>Select difficulty level</option>
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="difficult">Difficult</option>
+      </select>
+
+      <label for="time">Time Required:</label>
+      <input type="text" id="time" name="time" placeholder="Enter time required..." required>
+
+      <input class = "new_sub" type="submit" value ="Add Subject" onclick="storingdata()">
+      <input type="submit" value="Submit">
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
