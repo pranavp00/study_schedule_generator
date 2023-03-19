@@ -7,10 +7,14 @@ body{
 	background-size: cover;
 }
 
-form, .box{
+.input{
+    float: left;
+    width: 50%;
+}
+
+form {
     width: 500px;
     margin: 0 auto;
-    margin-top: 20px;
     left: 50%;
     top: 100%;
     background-color: white;
@@ -22,10 +26,9 @@ form, .box{
     display: block;
     font-weight: bold;
     margin-bottom: 10px;
-    padding-top: 10px;
   }
   input[type="text"],
-  select, input[type="number"] {
+  select {
     padding: 5px;
     margin-bottom: 10px;
     width: 100%;
@@ -33,7 +36,7 @@ form, .box{
     border: none;
     background-color: #f2f2f2;
   }
-  input[type="submit"], #add-subjects-btn,#sub_button {
+  input[type="submit"] {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -49,10 +52,7 @@ form, .box{
     margin-left: auto;
     margin-right: auto;
 }
-.introlines, .heading {
-  text-align: center;
-  margin-top: 0%;
-  padding: 10px;
+.introlines {
+  text-align: left;
   background-color: rgba(75,156,56,0.8);
 }
-

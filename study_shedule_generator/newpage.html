@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subject Form</title>
+	<link rel="stylesheet" href="index.css">
+	<!-- <style>
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		
+		h1 {
+			font-size: 32px;
+			margin-top: 0;
+		}
+		
+		label {
+			display: block;
+			margin-top: 10px;
+			font-size: 18px;
+		}
+		
+		input[type="number"] {
+			font-size: 18px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		
+		button {
+			font-size: 18px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #0062cc;
+		}
+		
+		#subject-fields {
+			margin-top: 20px;
+		}
+	</style> -->
+</head>
+<body>
+	<h1 class = 'heading'>Subject Form</h1>
+	<div class = "box">
+		<label for="days">Number of days:</label>
+		<input type="number" id="days" name="days">
+
+		<label for="subjects">Number of subjects:</label>
+		<input type="number" id="subjects" name="subjects">
+
+		<button id="add-subjects-btn">Add Subjects</button>
+
+	<div id="subject-fields"></div>
+	</div>
+	
+
+	<div id="tablec">
+		<div id="">
+			<table id="tablepart"></table>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+</body>
+</html>
